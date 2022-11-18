@@ -1,6 +1,6 @@
-#herodiv{
+.herodiv{
     width: 50vh;
-    height: 50vh;
+    height: 20vh;
     border: 1px solid red;
     align-content: center;
    

@@ -1,15 +1,21 @@
 let counterVar = document.getElementById("counter")
-
-console.log(counterVar)
-
+let saveVar = document.getElementById("saveData")
 let count = 0
 
 function increment() {
     
     count = count + 1
     
-    counterVar.textContent = count
+    counterVar.innerText = count
     
-    console.log(count)
-
 }
+
+function save() {
+    
+    let display = count + "-"
+    saveVar.textContent += display
+    counterVar.textContent = 0
+    count = 0
+    
+}
+
