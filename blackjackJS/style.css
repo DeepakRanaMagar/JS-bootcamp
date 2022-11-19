@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    background-color: green;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("greenboard.png");
+    background-size: cover;
+}
+h1{
+    color: gold;
+}
+p{
+    color: aliceblue;
+}
+
+#msg{
+    font-weight: light;
+}
+
+.button{
+    color: whitesmoke;
+    background: gold;
+    width: 2wh;
+    height: 5vh;
+    font-weight: bold;
+    border-radius: 2px;
+    border : none; 
+}
