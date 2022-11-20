@@ -5,18 +5,19 @@
   }
 
 *{
-    width: 100 wh;
-    height: 100 vh;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
 }
 
 
 
 #hero-container{
-    border: 1px solid red;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
+    border: 1px solid grey;
+    
 }
 
 
@@ -28,4 +29,9 @@
 .title-text{
     font-weight: bold;
     
+}
+
+#showPassword-section{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
