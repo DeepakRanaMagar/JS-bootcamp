@@ -6,3 +6,7 @@ function showPassword(){
     a.type = "password";
   }
 }
+
+function login(){
+    console.log("You clicked login button")
+}

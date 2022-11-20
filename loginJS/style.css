@@ -1,8 +1,22 @@
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+  }
+
+*{
+    width: 100 wh;
+    height: 100 vh;
+}
+
+
+
 #hero-container{
     border: 1px solid red;
     display: flex;
+    align-items: center;
     /* justify-content: center; */
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 
@@ -10,7 +24,8 @@
     background-color: green;
     color: beige;
 }
-#user-name{
+
+.title-text{
+    font-weight: bold;
     
 }
-

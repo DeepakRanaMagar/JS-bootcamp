@@ -10,17 +10,18 @@
 <body>
     <div id="hero-container">
     <!-- username field -->
-        <p id="username">Username</p>
-        <textarea placeholder="username" id="user-name" cols="1" rows="1"></textarea>    
+        <p class="title-text" id="username">Username</p>
+        <input type="text" placeholder="username">   
     <!-- password field -->
-        <p id="password">Password</p>
+        <p class="title-text" id="password">Password</p>
         <input type="password" id="password" placeholder="password" value="123">
     <!-- show password field -->
-        <input type="checkbox" id="checkbox" onclick="showPassword()">Show Password
+        <div id ="showPassword-section">
+            <input type="checkbox" id="checkbox" onclick="showPassword()">Show Password
+        </div>
         
-        
-        
-        <button id="login">Login</button>
+
+        <button id="login" onclick="login()">Login</button>
     </div>
 
 
