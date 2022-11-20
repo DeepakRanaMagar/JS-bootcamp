@@ -24,10 +24,10 @@ function getRandomCard(){
 
 
 function startGame() {
-    let isAlive = true
+    isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
-    let cards = [firstCard, secondCard]
+    cards = [firstCard, secondCard]
     sum = firstCard + secondCard
     
     renderGame()
