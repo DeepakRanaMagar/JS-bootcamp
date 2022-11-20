@@ -2,7 +2,7 @@
 *{
     background-color: green;
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url("greenboard.png");
+    /* background-image: url("greenboard.png"); */
     background-size: cover;
 }
 h1{
@@ -16,12 +16,17 @@ p{
     font-weight: light;
 }
 
-.button{
-    color: whitesmoke;
+button{
+    /* color: whitesmoke; */
     background: gold;
-    width: 2wh;
-    height: 5vh;
+    width: 5wh;
+    height: 3vh;
     font-weight: bold;
     border-radius: 2px;
-    border : none; 
+    border : 1 px solid red;
+    display: flex;
+    flex-direction: column;
+    
+
+
 }
