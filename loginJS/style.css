@@ -1,37 +1,45 @@
 @media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; 
+    .left,
+    .main,
+    .right {
+        width: 100%;
     }
-  }
-
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-
-#hero-container{
+/* entire page */
+#hero-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid grey;
-    
+
+    border: 1px solid red;
+    height: 100vh;
+    width: 100%;
 }
 
+/* container holding login */
+#container{
+    border: 1px solid black;
+    padding: 1vw;
+}
 
-#login{
+#login {
     background-color: green;
     color: beige;
 }
 
-.title-text{
+.title-text {
     font-weight: bold;
-    
 }
 
-#showPassword-section{
+#showPassword-section {
     padding-top: 10px;
     padding-bottom: 10px;
 }
