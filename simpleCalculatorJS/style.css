@@ -9,6 +9,9 @@
 
 #master-container{
     /* background-color: brown; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 
 }
 
@@ -22,16 +25,28 @@
 }
 
 #frame{
+    /* background-color: grey; */
     border: 2px solid green;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
-.buttons{
-    /* border: 3px solid yellow; */
+button{
+    padding: 13px 10px;
+    background-color:azure;
+}
+
+.buttons-container{
+    border: 3px solid yellow;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    align-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
+#display{
+    padding: 5px;
+
+}
