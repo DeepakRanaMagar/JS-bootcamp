@@ -1,0 +1,1 @@
+const varInput = document.querySelectorAll("#")
