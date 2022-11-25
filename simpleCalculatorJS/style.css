@@ -24,7 +24,7 @@
 
 #frame{
     /* background-color: grey; */
-    border: 5px solid green;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -32,9 +32,11 @@
 
 #display{
     padding: 5px;
-    border: 3px solid blue;
+    border: 1px solid black;
     border-radius: 5px;
     text-align:end;
+    margin: 1vw;
+    height: 5vh;
 
 }
 
@@ -66,10 +68,11 @@ button:hover{
 
 
 .buttons-container{
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     padding: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    /* background-color: rgb(163, 209, 242); */
     
 }
