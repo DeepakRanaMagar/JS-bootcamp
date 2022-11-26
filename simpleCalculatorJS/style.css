@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Source+Sans+Pro&display=swap');
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0vh;
+    padding: 0wh;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
 
 }
-
-/* #master-container{
-    
-} */
 
 #calculator-container{
     height: 100vh;
@@ -23,7 +19,6 @@
 }
 
 #frame{
-    /* background-color: grey; */
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -37,37 +32,24 @@
     text-align:end;
     margin: 1vw;
     height: 5vh;
-
 }
-
-
-
 button{
     margin: 1vh;
     padding: 1vw;
-
-    height: 4vh;
-    width: 4vw;
-
     text-align: center;
-
     cursor: pointer;
     border-radius: 4px;
     border: 1px solid #cfcfcf;
     
 }
-
 button:hover{
     background-color: #c8c4c4;
 }
 
 
 .buttons-container{
-    /* border: 3px solid yellow; */
     padding: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    /* background-color: rgb(163, 209, 242); */
-    
+    flex-wrap: wrap;    
 }
