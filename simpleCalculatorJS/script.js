@@ -1,48 +1,52 @@
-// variable for integers
-const btnNum = document.querySelectorAll('.btn-num')
-// variable for operators
-const operators = document.querySelectorAll('.operator')
-// variable for clear
-const clearAll = document.getElementById('ce')
-const clearSingle = document.querySelectorAll('.clear-single')
-const empty = ""
-
-//to append values to variable 
-var currentNum = ""
-var perviousNum = ""
-
-function appendValue(){
-    currentNum = span.innerHTML
-    // console.log(currentNum)
-}
-
-// variable for display
-const span= document.getElementById('display-section')
+const btnNum = document.querySelectorAll(".btn-num");
+const operators = document.querySelectorAll(".operator");
+const clearAll = document.getElementById("ce");
+const clearSingle = document.getElementById("c-single");
+const empty = "";
+const span = document.getElementById("display-section");
 
 
-
-
-//function to display
-function display(number){
-    span.innerHTML = span.innerHTML.concat(number.innerHTML)
+clearSingle.onclick=()=>{
     
-}
-for (let i = 0; i<btnNum.length; i++){
-
-    btnNum[i].onclick=()=>{
-        display(btnNum[i]);
-        appendValue()
-    }
+    span.innerHTML = span.innerHTML.slice(0,-1)
 }
 
-
-
-
-//clear-all garna 
 function clear() {
-    span.innerHTML=""
+    span.innerHTML = "";
 }
-clearAll.onclick=()=>{
-    clear()
+clearAll.onclick = () => {
+    clear();
+};
+
+function appendValue(input) {
+    input = span.innerHTML;
+    return input;
 }
 
+
+function display(number) {
+    span.innerHTML = span.innerHTML.concat(number.innerHTML);
+    appendValue(span.innerHTML)
+}
+for (let i = 0; i < btnNum.length; i++) {
+    btnNum[i].onclick = () => {
+        display(btnNum[i]);
+    };
+}
+
+//operators-display
+
+for (let i = 0; i < operators.length; i++) {
+    operators[i].onclick = () => {
+        display(operators[i]);
+    };
+}
+
+const equals = operators[5];
+
+equals.onclick = () => {
+    
+    var ans = parseFloat(eval(appendValue()));
+    span.innerHTML = ans
+   
+};
